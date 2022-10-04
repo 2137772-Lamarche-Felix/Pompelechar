@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scenes/MapAvecHitbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Scenes/VoitureJoueur.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/Scenes/VieCount.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Scripts/Pompe.gd" type="Script" id=8]
 [ext_resource path="res://Assets/Textures/meme/asdasdsad.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Scenes/explosion.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -35,6 +36,14 @@ margin_bottom = 34.0
 position = Vector2( 535, 49 )
 script = ExtResource( 8 )
 
+[node name="explosion2" parent="Pompe" instance=ExtResource( 10 )]
+one_shot = false
+
+[node name="Timer" type="Timer" parent="Pompe/explosion2"]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource( 1 )
 
@@ -52,3 +61,5 @@ _speed = 1
 position = Vector2( 868, 300 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 9 )
+
+[connection signal="timeout" from="Pompe/explosion2/Timer" to="Pompe" method="_on_Timer_timeout"]
