@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Scripts/PompeCount.gd" type="Script" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="PompeCount" type="Label"]
+modulate = Color( 0.788235, 0, 0.772549, 1 )
+material = SubResource( 1 )
+margin_right = 131.0
+margin_bottom = 32.0
+rect_scale = Vector2( 2, 2 )
+text = "Pamplemousse:"
+script = ExtResource( 1 )
