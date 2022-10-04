@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Scripts/Menu.gd" type="Script" id=1]
-[ext_resource path="res://craftpix-889156-free-racing-game-kit/PNG/Buttons/Exit_BTN.png" type="Texture" id=2]
-[ext_resource path="res://craftpix-889156-free-racing-game-kit/PNG/Buttons/Start_BTN.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/menu/Start_BTN.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/menu/Exit_BTN.png" type="Texture" id=3]
 [ext_resource path="res://Background.png" type="Texture" id=4]
 
 [node name="Menu" type="Control"]
@@ -33,13 +33,13 @@ rect_scale = Vector2( 0.260705, 0.241547 )
 [node name="Start" type="Button" parent="VBoxContainer"]
 margin_right = 612.0
 margin_bottom = 211.0
-icon = ExtResource( 3 )
+icon = ExtResource( 2 )
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 margin_top = 215.0
 margin_right = 612.0
 margin_bottom = 426.0
-icon = ExtResource( 2 )
+icon = ExtResource( 3 )
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

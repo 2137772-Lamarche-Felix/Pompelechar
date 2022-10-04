@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://craftpix-889156-free-racing-game-kit/PNG/Car_2_Main_Positions/Car_2_01.png" type="Texture" id=1]
-[ext_resource path="res://craftpix-889156-free-racing-game-kit/PNG/Car_Effects/Police_Beacons_Blue/Police_Beacons_Blue_002.png" type="Texture" id=2]
-[ext_resource path="res://craftpix-889156-free-racing-game-kit/PNG/Car_Effects/Police_Beacons_Red/Police_Beacons_Red_002.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/voiture/Car_2_01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Textures/voiture/Police_Beacons_Blue_002.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/voiture/Police_Beacons_Red_002.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 40.0
@@ -19,10 +19,6 @@ animations = [ {
 [node name="Police" type="Area2D"]
 scale = Vector2( 0.25, 0.25 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 8 )
-shape = SubResource( 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -40, 8 )
 scale = Vector2( 0.163597, 0.153898 )
@@ -30,14 +26,18 @@ texture = ExtResource( 1 )
 offset = Vector2( 222, 0 )
 
 [node name="Sprite2" type="Sprite" parent="Sprite"]
-position = Vector2( 342.305, -77.9738 )
-scale = Vector2( 0.421126, 1.59542 )
+position = Vector2( 342.305, -51.9824 )
+scale = Vector2( 0.224253, 1.59542 )
 texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Sprite"]
-position = Vector2( 97.8018, -77.9738 )
-scale = Vector2( 0.37321, 1.59386 )
+position = Vector2( 97.7969, -77.9736 )
+scale = Vector2( 0.19166, 1.59386 )
 texture = ExtResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -4, 12 )
+shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
