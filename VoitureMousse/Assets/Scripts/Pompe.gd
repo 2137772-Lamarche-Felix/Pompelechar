@@ -1,11 +1,14 @@
 extends Area2D
 
-onready var police = get_node("policeSprite")
+onready var explosion = get_parent().get_child(0)
 
 
-func _on_Pompe_body_entered(body: Area2D) -> void:
-	$explosion2.shot()
-	police.visible = false
-	Global.update_pompe(1)
+func _on_Pompe_body_entered(body: Area2D) -> void: 
+	for pompeBody in get_overlapping_bodies():
+		if pompeBody.is_in_group("joueur"):
+			Global.update_pompe(1)
+			explosion.shot()
+			queue_free()
+	
 
 
