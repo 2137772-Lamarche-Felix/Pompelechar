@@ -18,7 +18,7 @@ animations = [ {
 
 [sub_resource type="CapsuleShape2D" id=3]
 radius = 52.0
-height = 144.0
+height = 160.0
 
 [node name="Police" type="Area2D"]
 scale = Vector2( 0.25, 0.25 )
@@ -46,10 +46,10 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="PoliceBody" type="KinematicBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( -448, -60 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PoliceBody"]
+position = Vector2( -4, 12 )
 shape = SubResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Police_body_entered"]

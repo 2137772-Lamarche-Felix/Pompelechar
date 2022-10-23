@@ -26,7 +26,6 @@ func _process(delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("ui_up"):
 		velocity = Vector2.UP.rotated(rotation) * speed
-		$Lumiere_devant_gauche.visible = true
 	if Input.is_action_pressed("ui_down"):
 		velocity = Vector2.DOWN.rotated(rotation) * speed
 		$Lumiere_derriere_gauche.visible = true
