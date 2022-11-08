@@ -10,21 +10,21 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 512, 304 )
-scale = Vector2( 0.85, 0.9 )
+position = Vector2( 957, 526 )
+scale = Vector2( 1.60467, 1.71571 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 504, 264 )
-scale = Vector2( 0.306476, 0.298939 )
+position = Vector2( 986, 486 )
+scale = Vector2( 1.09568, 0.74735 )
 texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 224.0
-margin_top = 384.0
-margin_right = 388.0
-margin_bottom = 489.0
-rect_scale = Vector2( 3.55112, 4.30215 )
+margin_left = 646.0
+margin_top = 741.0
+margin_right = 810.0
+margin_bottom = 846.0
+rect_scale = Vector2( 4.35112, 5.46215 )
 
 [node name="Start" type="Button" parent="VBoxContainer"]
 margin_right = 164.0
