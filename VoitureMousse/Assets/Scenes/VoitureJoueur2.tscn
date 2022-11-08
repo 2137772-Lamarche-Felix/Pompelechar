@@ -11,7 +11,7 @@
 radius = 14.9999
 height = 24.0002
 
-[node name="VoitureJoueur" type="KinematicBody2D" groups=["touchePolice", "touchePompe"]]
+[node name="VoitureJoueur" type="KinematicBody2D" groups=["toucheJus", "touchePolice", "touchePompe", "turboJus"]]
 position = Vector2( 498, 247 )
 rotation = 1.5708
 script = ExtResource( 2 )
