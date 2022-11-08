@@ -9,6 +9,8 @@ signal Pompe_changed(Pompe)
 
 func update_pompe(delta):
 	Pompe+=delta
+	if Pompe >= 45:
+		get_tree().change_scene("res://Assets/Scenes/win.tscn")
 	
 ###
 ### code qui sert à compter les vies du joueur
@@ -20,3 +22,5 @@ signal Vie_changed(Vie)
 
 func update_vie(delta):
 	Vie-=delta
+	if Vie <= 0:
+		get_tree().change_scene("res://Assets/Scenes/game_over.tscn")

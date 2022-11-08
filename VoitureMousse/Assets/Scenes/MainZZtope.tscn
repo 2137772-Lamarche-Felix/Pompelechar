@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Scenes/MapAvecHitbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Scenes/VoitureJoueur.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/Scenes/Police.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Scripts/PathPolice.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Scenes/VieCount.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Assets/Scenes/pomplosion.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Textures/meme/asdasdsad.png" type="Texture" id=9]
 
 [sub_resource type="Curve2D" id=1]
@@ -45,108 +44,3 @@ script = ExtResource( 6 )
 position = Vector2( 868, 300 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 9 )
-
-[node name="Node2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 423, 42 )
-
-[node name="Pomplosion" parent="." instance=ExtResource( 8 )]
-position = Vector2( 433, 183 )
-
-[node name="Pomplosion2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 437, 257 )
-
-[node name="Pomplosion3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 435, 359 )
-
-[node name="Pomplosion4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 436, 422 )
-
-[node name="Pomplosion5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 388, 392 )
-
-[node name="Pomplosion6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 350, 306 )
-
-[node name="Pomplosion7" parent="." instance=ExtResource( 8 )]
-position = Vector2( 299, 288 )
-
-[node name="Pomplosion8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 305, 217 )
-
-[node name="Pomplosion9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 369, 183 )
-
-[node name="Pomplosion10" parent="." instance=ExtResource( 8 )]
-position = Vector2( 298, 353 )
-
-[node name="Pomplosion11" parent="." instance=ExtResource( 8 )]
-position = Vector2( 302, 409 )
-
-[node name="Pomplosion12" parent="." instance=ExtResource( 8 )]
-position = Vector2( 300, 464 )
-
-[node name="Pomplosion13" parent="." instance=ExtResource( 8 )]
-position = Vector2( 308, 524 )
-
-[node name="Pomplosion15" parent="." instance=ExtResource( 8 )]
-position = Vector2( 445, 535 )
-
-[node name="Pomplosion16" parent="." instance=ExtResource( 8 )]
-position = Vector2( 526, 536 )
-
-[node name="Pomplosion17" parent="." instance=ExtResource( 8 )]
-position = Vector2( 573, 503 )
-
-[node name="Pomplosion18" parent="." instance=ExtResource( 8 )]
-position = Vector2( 536, 472 )
-
-[node name="Pomplosion19" parent="." instance=ExtResource( 8 )]
-position = Vector2( 497, 413 )
-
-[node name="Pomplosion20" parent="." instance=ExtResource( 8 )]
-position = Vector2( 513, 316 )
-
-[node name="Pomplosion21" parent="." instance=ExtResource( 8 )]
-position = Vector2( 589, 285 )
-
-[node name="Pomplosion22" parent="." instance=ExtResource( 8 )]
-position = Vector2( 653, 349 )
-
-[node name="Pomplosion23" parent="." instance=ExtResource( 8 )]
-position = Vector2( 649, 402 )
-
-[node name="Pomplosion24" parent="." instance=ExtResource( 8 )]
-position = Vector2( 626, 454 )
-
-[node name="Pomplosion25" parent="." instance=ExtResource( 8 )]
-position = Vector2( 708, 381 )
-
-[node name="Pomplosion26" parent="." instance=ExtResource( 8 )]
-position = Vector2( 730, 324 )
-
-[node name="Pomplosion27" parent="." instance=ExtResource( 8 )]
-position = Vector2( 735, 258 )
-
-[node name="Pomplosion28" parent="." instance=ExtResource( 8 )]
-position = Vector2( 662, 232 )
-
-[node name="Pomplosion29" parent="." instance=ExtResource( 8 )]
-position = Vector2( 643, 184 )
-
-[node name="Pomplosion30" parent="." instance=ExtResource( 8 )]
-position = Vector2( 644, 122 )
-
-[node name="Pomplosion31" parent="." instance=ExtResource( 8 )]
-position = Vector2( 638, 50 )
-
-[node name="Pomplosion32" parent="." instance=ExtResource( 8 )]
-position = Vector2( 541, 49 )
-
-[node name="Pomplosion33" parent="." instance=ExtResource( 8 )]
-position = Vector2( 720, 55 )
-
-[node name="Pomplosion34" parent="." instance=ExtResource( 8 )]
-position = Vector2( 724, 163 )
-
-[node name="Pomplosion14" parent="." instance=ExtResource( 8 )]
-position = Vector2( 362, 537 )

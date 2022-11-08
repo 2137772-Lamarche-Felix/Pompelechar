@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Textures/menu/amogne_car.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/menu/unknown.png" type="Texture" id=3]
+
+[node name="win" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 512, 304 )
+scale = Vector2( 0.85, 0.9 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 504, 264 )
+scale = Vector2( 0.306476, 0.298939 )
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 224.0
+margin_top = 384.0
+margin_right = 388.0
+margin_bottom = 489.0
+rect_scale = Vector2( 3.55112, 4.30215 )
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+margin_right = 164.0
+margin_bottom = 20.0
+text = "Restart"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 164.0
+margin_bottom = 44.0
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

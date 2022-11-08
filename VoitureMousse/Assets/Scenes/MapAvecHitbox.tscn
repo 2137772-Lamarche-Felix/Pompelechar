@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Textures/map/blancGris.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Tilemap/City_Transparent.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Textures/map/Road_01/Road_01_Tile_01/Road_01_Tile_01.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Scenes/pomplosion.tscn" type="PackedScene" id=3]
 
 [sub_resource type="TileSet" id=1]
 0/name = "City_Transparent.png 0"
@@ -20,7 +20,6 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Road_01_Tile_01.png 1"
-1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 20, 20, 30, 30 )
@@ -34,7 +33,6 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Road_01_Tile_01.png 2"
-2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 8, 8, 681, 557 )
@@ -228,3 +226,213 @@ polygon = PoolVector2Array( 456, 516, 542, 516, 552, 499, 522, 485, 492, 459, 47
 tile_set = SubResource( 1 )
 format = 1
 tile_data = PoolIntArray( -65533, 1610612748, 0, -65531, 0, 0, 3, -1610612724, 0, 4, 10, 0, 12, -1073741812, 0, 65540, 10, 0, 65542, 10, 0, 65543, 10, 0, 65544, 10, 0, 65545, 10, 0, 131076, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 10, 0, 131081, 10, 0, 196612, 10, 0, 196613, 10, 0, 196614, 10, 0, 196615, 10, 0, 196616, 10, 0, 262148, 10, 0, 262150, 10, 0, 262151, -1610612732, 0, 262154, 10, 0, 327684, 10, 0, 327685, 10, 0, 327686, 10, 0, 327688, 10, 0, 327689, 10, 0, 393220, 10, 0, 393221, 10, 0, 458756, 10, 0, 458757, 5, 0, 458758, 10, 0, 458759, 10, 0, 458762, 10, 0, 524292, 10, 0, 524297, 10, 0, 589828, 12, 0 )
+
+[node name="Pomplosion" parent="." instance=ExtResource( 3 )]
+position = Vector2( 378, 41 )
+
+[node name="Pomplosion2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 520, 41 )
+
+[node name="Pomplosion3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 579, 41 )
+
+[node name="Pomplosion4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 645, 41 )
+
+[node name="Pomplosion5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 701, 43 )
+
+[node name="Pomplosion6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 656, 547 )
+
+[node name="Pomplosion7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 732, 74 )
+
+[node name="Pomplosion8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 736, 143 )
+
+[node name="Pomplosion9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 431, 110 )
+
+[node name="Pomplosion10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 428, 184 )
+
+[node name="Pomplosion11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 182 )
+
+[node name="Pomplosion12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 300, 216 )
+
+[node name="Pomplosion13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 301, 285 )
+
+[node name="Pomplosion14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 297, 347 )
+
+[node name="Pomplosion15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 299, 395 )
+
+[node name="Pomplosion16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 302, 461 )
+
+[node name="Pomplosion17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 303, 509 )
+
+[node name="Pomplosion18" parent="." instance=ExtResource( 3 )]
+position = Vector2( 335, 540 )
+
+[node name="Pomplosion19" parent="." instance=ExtResource( 3 )]
+position = Vector2( 393, 546 )
+
+[node name="Pomplosion20" parent="." instance=ExtResource( 3 )]
+position = Vector2( 438, 404 )
+
+[node name="Pomplosion21" parent="." instance=ExtResource( 3 )]
+position = Vector2( 434, 237 )
+
+[node name="Pomplosion22" parent="." instance=ExtResource( 3 )]
+position = Vector2( 432, 297 )
+
+[node name="Pomplosion23" parent="." instance=ExtResource( 3 )]
+position = Vector2( 433, 358 )
+
+[node name="Pomplosion24" parent="." instance=ExtResource( 3 )]
+position = Vector2( 434, 457 )
+
+[node name="Pomplosion25" parent="." instance=ExtResource( 3 )]
+position = Vector2( 437, 508 )
+
+[node name="Pomplosion26" parent="." instance=ExtResource( 3 )]
+position = Vector2( 382, 383 )
+
+[node name="Pomplosion27" parent="." instance=ExtResource( 3 )]
+position = Vector2( 367, 334 )
+
+[node name="Pomplosion28" parent="." instance=ExtResource( 3 )]
+position = Vector2( 343, 296 )
+
+[node name="Pomplosion29" parent="." instance=ExtResource( 3 )]
+position = Vector2( 445, 545 )
+
+[node name="Pomplosion30" parent="." instance=ExtResource( 3 )]
+position = Vector2( 491, 541 )
+
+[node name="Pomplosion31" parent="." instance=ExtResource( 3 )]
+position = Vector2( 538, 541 )
+
+[node name="Pomplosion32" parent="." instance=ExtResource( 3 )]
+position = Vector2( 569, 514 )
+
+[node name="Pomplosion33" parent="." instance=ExtResource( 3 )]
+position = Vector2( 543, 466 )
+
+[node name="Pomplosion34" parent="." instance=ExtResource( 3 )]
+position = Vector2( 499, 430 )
+
+[node name="Pomplosion35" parent="." instance=ExtResource( 3 )]
+position = Vector2( 489, 379 )
+
+[node name="Pomplosion36" parent="." instance=ExtResource( 3 )]
+position = Vector2( 499, 334 )
+
+[node name="Pomplosion37" parent="." instance=ExtResource( 3 )]
+position = Vector2( 449, 45 )
+
+[node name="Pomplosion38" parent="." instance=ExtResource( 3 )]
+position = Vector2( 530, 302 )
+
+[node name="Pomplosion39" parent="." instance=ExtResource( 3 )]
+position = Vector2( 575, 285 )
+
+[node name="Pomplosion40" parent="." instance=ExtResource( 3 )]
+position = Vector2( 620, 304 )
+
+[node name="Pomplosion41" parent="." instance=ExtResource( 3 )]
+position = Vector2( 653, 340 )
+
+[node name="Pomplosion42" parent="." instance=ExtResource( 3 )]
+position = Vector2( 660, 383 )
+
+[node name="Pomplosion43" parent="." instance=ExtResource( 3 )]
+position = Vector2( 651, 420 )
+
+[node name="Pomplosion44" parent="." instance=ExtResource( 3 )]
+position = Vector2( 623, 454 )
+
+[node name="Pomplosion45" parent="." instance=ExtResource( 3 )]
+position = Vector2( 585, 475 )
+
+[node name="Pomplosion46" parent="." instance=ExtResource( 3 )]
+position = Vector2( 585, 239 )
+
+[node name="Pomplosion47" parent="." instance=ExtResource( 3 )]
+position = Vector2( 563, 203 )
+
+[node name="Pomplosion48" parent="." instance=ExtResource( 3 )]
+position = Vector2( 527, 183 )
+
+[node name="Pomplosion49" parent="." instance=ExtResource( 3 )]
+position = Vector2( 478, 185 )
+
+[node name="Pomplosion50" parent="." instance=ExtResource( 3 )]
+position = Vector2( 434, 144 )
+
+[node name="Pomplosion51" parent="." instance=ExtResource( 3 )]
+position = Vector2( 388, 178 )
+
+[node name="Pomplosion52" parent="." instance=ExtResource( 3 )]
+position = Vector2( 432, 213 )
+
+[node name="Pomplosion53" parent="." instance=ExtResource( 3 )]
+position = Vector2( 736, 182 )
+
+[node name="Pomplosion54" parent="." instance=ExtResource( 3 )]
+position = Vector2( 733, 233 )
+
+[node name="Pomplosion55" parent="." instance=ExtResource( 3 )]
+position = Vector2( 736, 290 )
+
+[node name="Pomplosion56" parent="." instance=ExtResource( 3 )]
+position = Vector2( 736, 331 )
+
+[node name="Pomplosion57" parent="." instance=ExtResource( 3 )]
+position = Vector2( 732, 372 )
+
+[node name="Pomplosion58" parent="." instance=ExtResource( 3 )]
+position = Vector2( 733, 414 )
+
+[node name="Pomplosion59" parent="." instance=ExtResource( 3 )]
+position = Vector2( 731, 458 )
+
+[node name="Pomplosion60" parent="." instance=ExtResource( 3 )]
+position = Vector2( 415, 43 )
+
+[node name="Pomplosion61" parent="." instance=ExtResource( 3 )]
+position = Vector2( 648, 81 )
+
+[node name="Pomplosion62" parent="." instance=ExtResource( 3 )]
+position = Vector2( 647, 120 )
+
+[node name="Pomplosion63" parent="." instance=ExtResource( 3 )]
+position = Vector2( 645, 156 )
+
+[node name="Pomplosion64" parent="." instance=ExtResource( 3 )]
+position = Vector2( 644, 194 )
+
+[node name="Pomplosion65" parent="." instance=ExtResource( 3 )]
+position = Vector2( 622, 227 )
+
+[node name="Pomplosion66" parent="." instance=ExtResource( 3 )]
+position = Vector2( 665, 226 )
+
+[node name="Pomplosion67" parent="." instance=ExtResource( 3 )]
+position = Vector2( 699, 227 )
+
+[node name="Pomplosion68" parent="." instance=ExtResource( 3 )]
+position = Vector2( 735, 502 )
+
+[node name="Pomplosion69" parent="." instance=ExtResource( 3 )]
+position = Vector2( 695, 516 )
+
+[node name="Pomplosion70" parent="." instance=ExtResource( 3 )]
+position = Vector2( 732, 538 )

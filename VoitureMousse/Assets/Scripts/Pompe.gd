@@ -5,7 +5,7 @@ onready var explosion = get_parent().get_child(0)
 
 func _on_Pompe_body_entered(body: Area2D) -> void: 
 	for pompeBody in get_overlapping_bodies():
-		if pompeBody.is_in_group("joueur"):
+		if pompeBody.is_in_group("touchePompe"):
 			Global.update_pompe(1)
 			explosion.shot()
 			queue_free()

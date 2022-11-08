@@ -4,6 +4,7 @@ var speed = 100
 var angular_speed = PI
 
 func _process(delta):
+				
 	$Clignotant_droit.visible = false
 	$Clignotant_gauche.visible = false
 	var direction = 0
@@ -33,6 +34,11 @@ func _process(delta):
 #	var velocity = Vector2.UP.rotated(rotation) * speed
 	velocity = move_and_slide(velocity)
 	position += velocity * delta
+	
+	if !is_in_group("touchePolice"):
+		#set_position(get_position() + Vector2(306, 48))
+		set_position(Vector2(306, 48))
+		 
 #
 #	rotation += angular_speed * delta
 #	position += velocity * delta
