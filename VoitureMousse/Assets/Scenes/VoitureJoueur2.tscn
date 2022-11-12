@@ -1,17 +1,18 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Textures/voiture/Voiture map 2.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Scripts/Mouvement.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Scenes/PompeCount.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Textures/voiture/Stop_Signals_002.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Textures/voiture/Turn_Signals_003.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Textures/interieur/qwdadadsadsd.PNG" type="Texture" id=6]
 [ext_resource path="res://Assets/Scenes/VieCount.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 14.9999
 height = 24.0002
 
-[node name="VoitureJoueur" type="KinematicBody2D" groups=["toucheJus", "touchePolice", "touchePompe", "turboJus"]]
+[node name="VoitureJoueur" type="KinematicBody2D" groups=["prompteE", "toucheJus", "touchePolice", "touchePompe", "turboJus"]]
 position = Vector2( 498, 247 )
 rotation = 1.5708
 script = ExtResource( 2 )
@@ -65,3 +66,7 @@ margin_left = 50.0
 margin_top = 17.0
 margin_right = 149.0
 margin_bottom = 42.0
+
+[node name="interieur" type="Sprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )

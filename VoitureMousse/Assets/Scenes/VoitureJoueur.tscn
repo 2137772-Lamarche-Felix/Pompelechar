@@ -64,3 +64,5 @@ margin_left = 50.0
 margin_top = 17.0
 margin_right = 149.0
 margin_bottom = 42.0
+
+[node name="interieur" type="Sprite" parent="."]

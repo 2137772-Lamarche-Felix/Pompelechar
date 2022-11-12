@@ -5,7 +5,19 @@ extends Node
 ###
 var Pompe =0
 var jus = 0
+var prompteE = 0
+var playerState = 0
+var scene = 0
+
 signal Pompe_changed(Pompe)
+
+func _process(delta):
+	if Input.is_action_pressed("ui_2"):
+		get_tree().change_scene("res://Assets/Scenes/MainNiveau2.tscn")
+	if Input.is_action_pressed("ui_1"):
+		get_tree().change_scene("res://Assets/Scenes/MainZZtope.tscn")
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
 
 func update_pompe(delta):
 	Pompe+=delta
