@@ -9,6 +9,22 @@ var bas = "ui_down"
 
 func _process(delta):
 				
+	if Global.scene == 3:
+		$interieur.visible = true
+		$Sprite.visible = false
+		$Lumiere_derriere_droite.visible = false
+		$Lumiere_derriere_gauche.visible = false
+		$Clignotant_droit.visible = false
+		$Clignotant_gauche.visible = false
+		
+	if Global.scene == 2:
+		$interieur.visible = false
+		$Sprite.visible = true
+		$Lumiere_derriere_droite.visible = true
+		$Lumiere_derriere_gauche.visible = true
+		$Clignotant_droit.visible = true
+		$Clignotant_gauche.visible = true
+		
 	$Clignotant_droit.visible = false
 	$Clignotant_gauche.visible = false
 	var direction = 0
