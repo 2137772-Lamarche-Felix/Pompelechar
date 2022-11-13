@@ -386,6 +386,7 @@ visible = false
 position = Vector2( 568, 424 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -393,5 +394,5 @@ visible = false
 position = Vector2( 740, 368 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 9 )
-frame = 1
+frame = 2
 playing = true

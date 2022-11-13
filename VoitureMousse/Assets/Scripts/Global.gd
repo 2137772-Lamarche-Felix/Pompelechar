@@ -8,6 +8,7 @@ var jus = 0
 var prompteE = 0
 var playerState = 0
 var scene = 0
+var speedd =0
 
 signal Pompe_changed(Pompe)
 

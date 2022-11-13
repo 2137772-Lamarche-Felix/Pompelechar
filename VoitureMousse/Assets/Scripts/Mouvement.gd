@@ -60,10 +60,13 @@ func _process(delta):
 		set_position(Vector2(306, 48))
 		 
 	if !is_in_group("turboJus"):
+		add_to_group("turboJus");
+		speed = 200
 		yield(get_tree().create_timer(5.0), "timeout")
-		if Global.jus == 1 :
-			speed *= 1.50
+		speed = 100
+		
 #	rotation += angular_speed * delta
 #	position += velocity * delta
+	Global.speedd = speed 
 
 
