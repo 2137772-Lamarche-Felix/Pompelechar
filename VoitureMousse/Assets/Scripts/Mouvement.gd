@@ -7,6 +7,9 @@ var gauche = "ui_left"
 var haut = "ui_up"
 var bas = "ui_down"
 
+func _ready():
+	remove_from_group("")
+
 func _process(delta):
 				
 	if Global.scene == 3:
